@@ -7,7 +7,67 @@
 </head>
 
 <body>
+<nav>
+  <ul> 
+    <li> <a href="#">View Music</a></li>
+    <li> <a href="#">Add Music</a></li>
+    <li> <a href="#">Profile</a></li>
+  </ul>
 
+  <div id="song-length" class="left-bar">
+
+    <label for"song-length">Song Length:</label>
+    <input type="range" id="song-length">
+
+  </div>  
+
+  <div id="artist" class="left-bar">
+    <label for="artist-name" autofocus>Artist:</label>
+    <input name="artist" list="artist-name" placeholder="Options">
+    <datalist id="artist-name">
+      <option value="Neutral Milk Hotel"></option>
+      <option value="Beirut"></option>
+      <option value="Lou Reed"></option>
+      <option value="BRMC"></option>
+      <option value="Magnetic Fields"></option>
+    </datalist>
+  </div>
+
+  <div id="album" class="left-bar"> 
+    <label for="album-name" autofocus>Artist:</label>
+    <input name="album" list="album-name" placeholder="Options">
+    <datalist id="album-name">
+      <option value="album-1"></option>
+      <option value="album-2"></option>
+      <option value="album-3"></option>
+      <option value="album-4"></option>
+      <option value="album-5"></option>
+    </datalist>
+  </div>
+
+  <div id="genre" class="left-bar">
+    <legend>Genre:</legend>
+    <input type="checkbox" value="rock">Rock
+    <input type="checkbox" value="pop">Pop
+    <input type="checkbox" value="blues">Blues
+    <input type="checkbox" value="classical">Classical
+    <input type="checkbox" value="jazz">Jazz
+    <input type="checkbox" value="hip-hop">Hip-Hop
+  </div>
+
+  <div id="filter-button" class="left-bar">
+    <input type="submit" value="Filter">
+  </div> 
+  
+
+
+
+
+
+
+
+
+       
 
 </body>
 </html>
