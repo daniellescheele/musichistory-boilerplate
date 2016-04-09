@@ -24,7 +24,7 @@
     <div id="article">
       
         
-      <div class="left-bar">
+      <div id="left-bar">
 
         <div class="choices">
           <label for"song-length">Song Length:</label>
@@ -55,14 +55,23 @@
           </datalist>
         </div>
 
-        <div class="choices">  
+        <div id="checkboxes" class="choices">  
           <legend>Genre:</legend>
-            <input type="checkbox" value="rock">Rock
-            <input type="checkbox" value="pop">Pop
-            <input type="checkbox" value="blues">Blues
-            <input type="checkbox" value="classical">Classical
-            <input type="checkbox" value="jazz">Jazz
-            <input type="checkbox" value="hip-hop">Hip-Hop
+            
+            <div id="checkbox-left">
+              <div class="input1"><input type="checkbox" value="rock">Rock</div>
+              <div class="input1"><input type="checkbox" value="pop">Pop</div>
+              <div class="input1"><input type="checkbox" value="blues">Blues</div>
+            </div>
+
+            <div id="checkbox-right">  
+              <div class="input2"><input type="checkbox" value="classical">Classical</div>
+              <div class="input2"><input type="checkbox" value="jazz">Jazz</div>
+              <div class="input2"><input type="checkbox" value="hip-hop">Hip-Hop</div>
+
+            
+            </div>
+
         </div>
           
 
@@ -72,13 +81,15 @@
         
       </div>
 
-        <div id="song-name" class="right-bar">
-          <h2>Song Name</h2>
-          <h4>Artist Name | Album Name | Genre</h4>
-          <h2>Song Name</h2>
-          <h4>Artist Name | Album Name | Genre</h4>
-          <h2>Song Name</h2>
-          <h4>Artist Name | Album Name | Genre</h4>
+        <div id="right-bar">
+          <h2 class="song-name">Song Name</h2>
+          <p class="song-info">Artist Name  |  Album Name |  Genre</p>
+          <h2 class="song-name">Song Name</h2>
+          <p class="song-info">Artist Name  |  Album Name |  Genre</p>
+          <h2 class="song-name">Song Name</h2>
+          <p class="song-info">Artist Name  |  Album Name |  Genre</p>
+          <h2 class="song-name">Song Name</h2>
+          <p class="song-info">Artist Name  |  Album Name |  Genre</p>
         </div>
 
 

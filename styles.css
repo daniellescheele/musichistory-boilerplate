@@ -5,7 +5,7 @@ body {
 }
 
 #wrapper {
-	width: 80%;
+	width: 70%;
 	margin:0 auto;
 
 }
@@ -15,7 +15,7 @@ body {
 }
 
 .topbar {
-	width: 100%;
+	
 	left: 0;
 	background-color: #FFB4B0;  
 	border: 2px solid;
@@ -35,37 +35,74 @@ nav li {
 
 #article {
 	width: 100%;
-    margin-top: 5px;
-    
+    margin-top: 5px ;
+    padding-bottom: 5px;
 }
 
 	
-.left-bar {
+#left-bar {
 	background-color: #4DD7FA ;
 	
-	float: left;
+	display: inline-block;
 	border: 2px solid;
-	width: 23%;
+	width: 20%;
+    height: 100%;
     padding-right: 5px;
-    margin-left: 0;
-    padding-bottom: 7px;
- 
-   
+    padding-left: 5px;
+    padding-top: 25px;
+    /*margin-left: 20;*/
     
-	
 }	
 
-.right-bar {
+#right-bar {
 	background-color: #FEFAC0;
 	border: 2px solid;
-	float: right;
+	display: inline-block;
     width: 75%;
+    height: 100%;
+    padding-left: 10px;
+    padding-bottom: 3px;
+    margin-left: 9px;
+    margin-top: 10px;
 
 }
 
 .choices {
-    margin:18px;
+    margin:18px 0px;
     padding-top: 4px;
 }
-	
+
+.song-name  {
+    color: #785616;
+    font-family: sans-serif;
+
+}	
+
+.song-info {
+    color: #785616;
+    font-family: sans-serif;
+}
+
+
+#checkboxes {
+    padding-right:3px;
+    padding-left:3px;
+}
+
+
+#checkbox-left {
+    display: inline-block;
+    width: 50%;
+}
+
+#checkbox-right {
+    display: inline-block;
+     
+       
+}
+
+
+
+
+
 	
