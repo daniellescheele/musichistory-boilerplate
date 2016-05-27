@@ -1,123 +1,59 @@
+/** {
+	box-sizing: border-box;
+}
+*/
 body {
-	margin: 0;
-	padding: 0;
-	width: 90%;
-}
-
-#wrapper {
-	width: 70%;
-	margin:20px auto;
-
-}
-
-.clear {
-    clear: both;
-}
-
-.topbar {
-	
-	left: 0;
-	background-color: #FFB4B0;  
-	border: 2px solid;
-	padding-top: 0px 10px;
-	margin-top: 10px 10px 10px 10px;
-	
-	
-}
-.topbar ul {
-    padding-left: 5px;
-}
-
-
-.topbar li {
-	list-style-type: none;
-	float: left;
-	padding: 0px 0px 2px 2px;
-	margin: 2px;
-
-
-}
-
-.topbar li a {
-    color: black;
-    text-decoration: none;
-}
-.topbar li a:visited {
-    color: blue;
-}
-
-
-#article {
 	width: 100%;
-    margin-top: 5px ;
-    padding-bottom: 5px;
+
+
 }
 
-	
-#left-bar {
-	background-color: #4DD7FA ;
-	
-	display: inline-block;
-	border: 2px solid;
-	width: 20%;
-    height: 100%;
-    padding-right: 5px;
-    padding-left: 5px;
-    padding-top: 25px;
-    /*margin-left: 20;*/
-    
-}	
+.wrapper {
+	width: 60%;
+	margin:auto;
+	padding:4%;
+}
 
-#right-bar {
-	background-color: #FEFAC0;
-	border: 2px solid;
-	display: inline-block;
-    width: 75%;
-    height: 100%;
-    padding-left: 10px;
-    padding-bottom: 3px;
-    margin-left: 9px;
-    margin-top: 10px;
+.navbar {
+	width: 100%;
+	background-color: #FFB4B0;
+	border: 2px solid black;
+}
+.navbar li a {
+	display: inline;
+}
 
+
+.leftColumn {
+	background-color: #4DD7FA;
+	margin-top: 5px;
+	border: 2px solid black;
+	display: inline-block;
+	width:27%;
+	margin-right: 2.5px;
+	/*padding: 1.5%;*/
+
+}
+
+#checkboxes {
+	padding: 5px;
 }
 
 .choices {
-    margin:18px 0px;
-    padding-top: 4px;
+	padding: 5px;
 }
 
-
-.song-name  {
-    color: #785616;
-    font-family: sans-serif;
-
-}	
-
-.song-info {
-    color: #785616;
-    font-family: sans-serif;
+.rightColumn {
+	background-color: #FEFAC0 ;
+	margin-top: 5px;
+	margin-left: 2.5px;
+	border: 2px solid black;
+	display: inline-block;
+	width:71%;
+	/*padding: 1.5%;*/
 }
 
-
-#checkboxes {
-    padding-right:3px;
-    padding-left:3px;
+.song-name {
+	padding: 4px;
 }
 
-
-#checkbox-left {
-    display: inline-block;
-    width: 50%;
-}
-
-#checkbox-right {
-    display: inline-block;
-     
-       
-}
-
-
-
-
-
-	
