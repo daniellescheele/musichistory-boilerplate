@@ -19,9 +19,15 @@ body {
 	background-color: #FFB4B0;
 	border: 2px solid black;
 }
-.navbar li a {
-	display: inline;
+.navItem {
+	display: inline-block;
+
 }
+.navbar li {
+	list-style: none;
+	padding: 3px;
+}
+
 
 
 .leftColumn {
@@ -40,7 +46,7 @@ body {
 }
 
 .choices {
-	padding: 5px;
+	padding: 3%;
 }
 
 .rightColumn {
@@ -54,6 +60,11 @@ body {
 }
 
 .song-name {
-	padding: 4px;
+	padding-left: 7px;
 }
+.song-info {
+	padding-left: 7px;
+}
+
+
 
