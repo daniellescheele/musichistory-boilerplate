@@ -10,77 +10,81 @@
 	<div class="wrapper">
 		<div class="navbar">
 			<ul>
-				<div class="navItem"><li><a href="#">View Music</a></li></div>
-				<div class="navItem"><li><a href="#">Add Music</a></li></div>
-				<div class="navItem"><li><a href="#">Profile</a></li></div>
+				<div id="listLink"><li><a href="#">List Music</a></li></div>
+				<div id="addLink"><li><a href="#">Add Music</a></li></div>
 			</ul>
 		</div>
 
+		<div id="listView" class="visible">
+			<div class="leftColumn">
+				<div class="choices">
+			    <label for="song-length">Song Length:</label>
+			    <input type="range" id="song-length">
+			  </div>
 
-		<div class="leftColumn">
-			<div class="choices">
-		    <label for="song-length">Song Length:</label>
-		    <input type="range" id="song-length">
-		  </div>
+			  <div class="choices">
+			    <label for="artist-name">Artist:</label>
+			    <input name="artist" list="artist-name" placeholder="Options">
+			      <datalist id="artist-name">
+			        <option value="Neutral Milk Hotel"></option>
+			        <option value="Beirut"></option>
+			        <option value="Lou Reed"></option>
+			        <option value="BRMC"></option>
+			        <option value="Magnetic Fields"></option>
+			      </datalist>
+			  </div>
 
-		  <div class="choices">
-		    <label for="artist-name">Artist:</label>
-		    <input name="artist" list="artist-name" placeholder="Options">
-		      <datalist id="artist-name">
-		        <option value="Neutral Milk Hotel"></option>
-		        <option value="Beirut"></option>
-		        <option value="Lou Reed"></option>
-		        <option value="BRMC"></option>
-		        <option value="Magnetic Fields"></option>
-		      </datalist>
-		  </div>
+			  <div class="choices">
+			    <label for="album-name">Album:</label>
+			    <input name="album" list="album-name" placeholder="Options" >
+			      <datalist id="album-name">
+			        <option value="album-1"></option>
+			        <option value="album-2"></option>
+			        <option value="album-3"></option>
+			        <option value="album-4"></option>
+			        <option value="album-5"></option>
+			      </datalist>
+			  </div>
 
-		  <div class="choices">
-		    <label for="album-name">Album:</label>
-		    <input name="album" list="album-name" placeholder="Options" >
-		      <datalist id="album-name">
-		        <option value="album-1"></option>
-		        <option value="album-2"></option>
-		        <option value="album-3"></option>
-		        <option value="album-4"></option>
-		        <option value="album-5"></option>
-		      </datalist>
-		  </div>
+			  <div id="checkboxes" class="choices">
+			    <h1>Genre:</h1>
+	        <div id="checkbox-left">
+	          <div class="input1"><input type="checkbox" value="rock">Rock</div>
+	          <div class="input1"><input type="checkbox" value="pop">Pop</div>
+	          <div class="input1"><input type="checkbox" value="blues">Blues</div>
+	        </div>
 
-		  <div id="checkboxes" class="choices">
-		    <h1>Genre:</h1>
-        <div id="checkbox-left">
-          <div class="input1"><input type="checkbox" value="rock">Rock</div>
-          <div class="input1"><input type="checkbox" value="pop">Pop</div>
-          <div class="input1"><input type="checkbox" value="blues">Blues</div>
-        </div>
+	        <div id="checkbox-right">
+	        	<div class="input2"><input type="checkbox" value="classical">Classical</div>
+	        	<div class="input2"><input type="checkbox" value="jazz">Jazz</div>
+	          <div class="input2"><input type="checkbox" value="hip-hop">Hip-Hop</div>
+					</div>
 
-        <div id="checkbox-right">
-        	<div class="input2"><input type="checkbox" value="classical">Classical</div>
-        	<div class="input2"><input type="checkbox" value="jazz">Jazz</div>
-          <div class="input2"><input type="checkbox" value="hip-hop">Hip-Hop</div>
+					<div id="filter-button" class="choices">
+			      <input type="submit" value="Filter">
+			  	</div>
 				</div>
-
-				<div id="filter-button" class="choices">
-		      <input type="submit" value="Filter">
-		  	</div>
 			</div>
-		</div>
-		<div class="rightColumn">
-			<h2 class="song-name">Song Name</h2>
-	    <p class="song-info">Artist Name  |  Album Name |  Genre</p>
-	    <h2 class="song-name">Song Name</h2>
-	    <p class="song-info">Artist Name  |  Album Name |  Genre</p>
-	    <h2 class="song-name">Song Name</h2>
-	    <p class="song-info">Artist Name  |  Album Name |  Genre</p>
-	    <h2 class="song-name">Song Name</h2>
-	    <p class="song-info">Artist Name  |  Album Name |  Genre</p>
-    </div>
-
+			<div id="songList" class="rightColumn">
+				<h2 class="song-name">Song Name</h2>
+		    <p class="song-info">Artist Name  |  Album Name |  Genre</p>
+		    <h2 class="song-name">Song Name</h2>
+		    <p class="song-info">Artist Name  |  Album Name |  Genre</p>
+		    <h2 class="song-name">Song Name</h2>
+		    <p class="song-info">Artist Name  |  Album Name |  Genre</p>
+		    <h2 class="song-name">Song Name</h2>
+		    <p class="song-info">Artist Name  |  Album Name |  Genre</p>
+	    </div>
+	</div>
+	<div id="addMusicView" class="hidden">
+		<input type="text" id="songTitleInput" placeholder="Song">
+		<input type="text" id="artistInput"	placeholder="Artist">
+		<input type="text" id="albumInput" placeholder="Album">
+		<button type="button" id="addInput">ADD</button>
 	</div>
 
 
-
-
+</div>
+<script src="songs.js"></script>
 </body>
 </html>

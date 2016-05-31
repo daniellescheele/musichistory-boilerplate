@@ -28,7 +28,13 @@ body {
 	padding: 3px;
 }
 
+.visible {
+	display: block;
+}
 
+.hidden {
+	display: none;
+}
 
 .leftColumn {
 	background-color: #4DD7FA;
